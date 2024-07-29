@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: beige;
+}
+
+.nav_header {
+    background-color: beige;
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo {
+    display: inline-block;
+    text-align: start;
+    color: rgb(112, 112, 60);
+    margin-top: 5px;
+}
+
+.logo .justice {
+    display: block;
+}
+
+.logo .arc {
+    display: block;
+}
+
+.signup, .signin {
+    background-color: rgb(66, 66, 7) !important;
+    color: white  !important;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.card {
+    background-color: rgb(112, 112, 60);
+}
+
+.btn {
+    background-color: beige;
+}
+
+.fixed-img {
+    height: 300px; 
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: beige;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+footer {
+    background-color: rgb(112, 112, 60);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    height: 80px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.footer-about p,
+.footer-links ul,
+.footer-social a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: rgb(112, 112, 60);
+    color: #bbb;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.carousel-item {
+    height: 85vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .footer-about,
+    .footer-links,
+    .footer-social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-social a {
+        display: block;
+        margin: 10px 0;
+    }
+}
